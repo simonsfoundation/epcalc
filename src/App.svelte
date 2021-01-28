@@ -181,6 +181,7 @@
     grid-template-areas:
       'left-top    vline right'
       'left-bottom vline right';
+    overflow: hidden;
   }
 
   .chartmobile {

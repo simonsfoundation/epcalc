@@ -25741,36 +25741,30 @@
 
     const file$8 = "src/App.svelte";
 
-    // (258:0) {:else}
+    // (259:0) {:else}
     function create_else_block$4(ctx) {
-    	var meta, t0, div5, div0, updating_mobile, updating_OMInterventionAmt, updating_InterventionTime, updating_checked, updating_active, t1, div1, t2, div2, updating_checked_1, t3, div3, t4, div4, current;
+    	var meta, t0, div5, div0, updating_OMInterventionAmt, updating_InterventionTime, updating_checked, updating_active, t1, div1, t2, div2, updating_checked_1, t3, div3, t4, div4, current;
 
-    	function seir_mobile_binding(value) {
-    		ctx.seir_mobile_binding.call(null, value);
-    		updating_mobile = true;
-    		add_flush_callback(() => updating_mobile = false);
-    	}
-
-    	function seir_OMInterventionAmt_binding_1(value_1) {
-    		ctx.seir_OMInterventionAmt_binding_1.call(null, value_1);
+    	function seir_OMInterventionAmt_binding_1(value) {
+    		ctx.seir_OMInterventionAmt_binding_1.call(null, value);
     		updating_OMInterventionAmt = true;
     		add_flush_callback(() => updating_OMInterventionAmt = false);
     	}
 
-    	function seir_InterventionTime_binding_1(value_2) {
-    		ctx.seir_InterventionTime_binding_1.call(null, value_2);
+    	function seir_InterventionTime_binding_1(value_1) {
+    		ctx.seir_InterventionTime_binding_1.call(null, value_1);
     		updating_InterventionTime = true;
     		add_flush_callback(() => updating_InterventionTime = false);
     	}
 
-    	function seir_checked_binding_1(value_3) {
-    		ctx.seir_checked_binding_1.call(null, value_3);
+    	function seir_checked_binding_1(value_2) {
+    		ctx.seir_checked_binding_1.call(null, value_2);
     		updating_checked = true;
     		add_flush_callback(() => updating_checked = false);
     	}
 
-    	function seir_active_binding_1(value_4) {
-    		ctx.seir_active_binding_1.call(null, value_4);
+    	function seir_active_binding_1(value_3) {
+    		ctx.seir_active_binding_1.call(null, value_3);
     		updating_active = true;
     		add_flush_callback(() => updating_active = false);
     	}
@@ -25780,11 +25774,9 @@
     		Sol: ctx.Sol,
     		N: ctx.N,
     		height: 280,
-    		width: 345
+    		width: 345,
+    		mobile: true
     	};
-    	if (ctx.mobile !== void 0) {
-    		seir_props.mobile = ctx.mobile;
-    	}
     	if (ctx.OMInterventionAmt !== void 0) {
     		seir_props.OMInterventionAmt = ctx.OMInterventionAmt;
     	}
@@ -25799,14 +25791,13 @@
     	}
     	var seir = new SEIR({ props: seir_props, $$inline: true });
 
-    	binding_callbacks.push(() => bind(seir, 'mobile', seir_mobile_binding));
     	binding_callbacks.push(() => bind(seir, 'OMInterventionAmt', seir_OMInterventionAmt_binding_1));
     	binding_callbacks.push(() => bind(seir, 'InterventionTime', seir_InterventionTime_binding_1));
     	binding_callbacks.push(() => bind(seir, 'checked', seir_checked_binding_1));
     	binding_callbacks.push(() => bind(seir, 'active', seir_active_binding_1));
 
-    	function seirpanel_checked_binding_1(value_5) {
-    		ctx.seirpanel_checked_binding_1.call(null, value_5);
+    	function seirpanel_checked_binding_1(value_4) {
+    		ctx.seirpanel_checked_binding_1.call(null, value_4);
     		updating_checked_1 = true;
     		add_flush_callback(() => updating_checked_1 = false);
     	}
@@ -25855,30 +25846,30 @@
     			div4 = element("div");
     			attr_dev(meta, "name", "viewport");
     			attr_dev(meta, "content", "width=370");
-    			add_location(meta, file$8, 259, 2, 8226);
+    			add_location(meta, file$8, 260, 2, 8267);
     			set_style(div0, "position", "relative");
     			set_style(div0, "grid-area", "top");
     			set_style(div0, "left", "-25px");
-    			add_location(div0, file$8, 262, 4, 8340);
+    			add_location(div0, file$8, 263, 4, 8381);
     			set_style(div1, "grid-area", "line");
     			set_style(div1, "border-bottom", "1px solid rgb(200,200,200)");
-    			add_location(div1, file$8, 275, 4, 8679);
+    			add_location(div1, file$8, 276, 4, 8722);
     			set_style(div2, "grid-area", "left-bottom");
     			set_style(div2, "padding", "2px 4px 0px 0px");
-    			add_location(div2, file$8, 277, 4, 8763);
-    			attr_dev(div3, "class", "legendtext svelte-zyymcl");
+    			add_location(div2, file$8, 278, 4, 8806);
+    			attr_dev(div3, "class", "legendtext svelte-5zk37s");
     			set_style(div3, "width", "100%");
     			set_style(div3, "margin-top", "5px");
     			set_style(div3, "position", "relative");
     			set_style(div3, "grid-area", "right-bottom");
-    			add_location(div3, file$8, 289, 4, 9139);
+    			add_location(div3, file$8, 290, 4, 9182);
     			set_style(div4, "grid-area", "line2");
     			set_style(div4, "border-bottom", "1.5px solid rgb(200,200,200)");
-    			add_location(div4, file$8, 293, 4, 9342);
-    			attr_dev(div5, "class", "chartmobile svelte-zyymcl");
+    			add_location(div4, file$8, 294, 4, 9385);
+    			attr_dev(div5, "class", "chartmobile svelte-5zk37s");
     			set_style(div5, "width", "360px");
     			set_style(div5, "overflow", "hidden");
-    			add_location(div5, file$8, 260, 2, 8271);
+    			add_location(div5, file$8, 261, 2, 8312);
     		},
 
     		m: function mount(target, anchor) {
@@ -25904,9 +25895,6 @@
     			var seir_changes = {};
     			if (changed.Sol) seir_changes.Sol = ctx.Sol;
     			if (changed.N) seir_changes.N = ctx.N;
-    			if (!updating_mobile && changed.mobile) {
-    				seir_changes.mobile = ctx.mobile;
-    			}
     			if (!updating_OMInterventionAmt && changed.OMInterventionAmt) {
     				seir_changes.OMInterventionAmt = ctx.OMInterventionAmt;
     			}
@@ -25965,11 +25953,11 @@
     			destroy_component(selector);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_else_block$4.name, type: "else", source: "(258:0) {:else}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_else_block$4.name, type: "else", source: "(259:0) {:else}", ctx });
     	return block;
     }
 
-    // (217:0) {#if !mobile}
+    // (218:0) {#if screenWidth > 767}
     function create_if_block$4(ctx) {
     	var meta, t0, div5, div0, updating_checked, t1, div1, updating_R0, updating_D_incbation, updating_D_infectious, updating_CFR, updating_Time_to_death, t2, div4, div2, updating_OMInterventionAmt, updating_InterventionTime, updating_checked_1, updating_active, t3, div3, current;
 
@@ -26122,28 +26110,28 @@
     			selector.$$.fragment.c();
     			attr_dev(meta, "name", "viewport");
     			attr_dev(meta, "content", "width=980");
-    			add_location(meta, file$8, 217, 2, 7051);
+    			add_location(meta, file$8, 218, 2, 7092);
     			set_style(div0, "margin-right", "5px");
     			set_style(div0, "grid-area", "left-top");
-    			add_location(div0, file$8, 220, 4, 7142);
+    			add_location(div0, file$8, 221, 4, 7183);
     			set_style(div1, "margin-right", "5px");
     			set_style(div1, "grid-area", "left-bottom");
-    			add_location(div1, file$8, 233, 4, 7480);
+    			add_location(div1, file$8, 234, 4, 7521);
     			set_style(div2, "position", "relative");
     			set_style(div2, "left", "-12px");
-    			add_location(div2, file$8, 245, 6, 7816);
-    			attr_dev(div3, "class", "legendtext svelte-zyymcl");
+    			add_location(div2, file$8, 246, 6, 7857);
+    			attr_dev(div3, "class", "legendtext svelte-5zk37s");
     			set_style(div3, "width", "100%");
     			set_style(div3, "margin-top", "21px");
     			set_style(div3, "position", "relative");
     			set_style(div3, "padding", "10px");
-    			add_location(div3, file$8, 249, 6, 8026);
+    			add_location(div3, file$8, 250, 6, 8067);
     			set_style(div4, "position", "relative");
     			set_style(div4, "grid-area", "right");
-    			add_location(div4, file$8, 243, 4, 7759);
-    			attr_dev(div5, "class", "chart svelte-zyymcl");
+    			add_location(div4, file$8, 244, 4, 7800);
+    			attr_dev(div5, "class", "chart svelte-5zk37s");
     			set_style(div5, "width", "980px");
-    			add_location(div5, file$8, 218, 2, 7096);
+    			add_location(div5, file$8, 219, 2, 7137);
     		},
 
     		m: function mount(target, anchor) {
@@ -26250,12 +26238,12 @@
     			destroy_component(selector);
     		}
     	};
-    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block$4.name, type: "if", source: "(217:0) {#if !mobile}", ctx });
+    	dispatch_dev("SvelteRegisterBlock", { block, id: create_if_block$4.name, type: "if", source: "(218:0) {#if screenWidth > 767}", ctx });
     	return block;
     }
 
     function create_fragment$8(ctx) {
-    	var div, input, t0, t1, t2, current_block_type_index, if_block, if_block_anchor, current, dispose;
+    	var current_block_type_index, if_block, if_block_anchor, current, dispose;
 
     	add_render_callback(ctx.onwindowresize);
 
@@ -26267,7 +26255,7 @@
     	var if_blocks = [];
 
     	function select_block_type(changed, ctx) {
-    		if (!ctx.mobile) return 0;
+    		if (ctx.screenWidth > 767) return 0;
     		return 1;
     	}
 
@@ -26276,23 +26264,9 @@
 
     	const block = {
     		c: function create() {
-    			div = element("div");
-    			input = element("input");
-    			t0 = text(" Mobile = ");
-    			t1 = text(ctx.mobile);
-    			t2 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			attr_dev(input, "type", "checkbox");
-    			input.checked = true;
-    			add_location(input, file$8, 213, 0, 6955);
-    			set_style(div, "padding", "5px");
-    			add_location(div, file$8, 212, 0, 6928);
-
-    			dispose = [
-    				listen_dev(window, "resize", ctx.onwindowresize),
-    				listen_dev(input, "change", ctx.input_change_handler)
-    			];
+    			dispose = listen_dev(window, "resize", ctx.onwindowresize);
     		},
 
     		l: function claim(nodes) {
@@ -26300,26 +26274,12 @@
     		},
 
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, input);
-
-    			input.checked = ctx.mobile;
-
-    			append_dev(div, t0);
-    			append_dev(div, t1);
-    			insert_dev(target, t2, anchor);
     			if_blocks[current_block_type_index].m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     			current = true;
     		},
 
     		p: function update(changed, ctx) {
-    			if (changed.mobile) input.checked = ctx.mobile;
-
-    			if (!current || changed.mobile) {
-    				set_data_dev(t1, ctx.mobile);
-    			}
-
     			var previous_block_index = current_block_type_index;
     			current_block_type_index = select_block_type(changed, ctx);
     			if (current_block_type_index === previous_block_index) {
@@ -26353,28 +26313,25 @@
     		},
 
     		d: function destroy(detaching) {
-    			if (detaching) {
-    				detach_dev(div);
-    				detach_dev(t2);
-    			}
-
     			if_blocks[current_block_type_index].d(detaching);
 
     			if (detaching) {
     				detach_dev(if_block_anchor);
     			}
 
-    			run_all(dispose);
+    			dispose();
     		}
     	};
     	dispatch_dev("SvelteRegisterBlock", { block, id: create_fragment$8.name, type: "component", source: "", ctx });
     	return block;
     }
 
+    let mobile = false;
+
     function instance$8($$self, $$props, $$invalidate) {
     	
 
-      var colors = [ "#386cb0", "#8da0cb", "#4daf4a", "#f0027f", "#fdc086"];
+      var colors = [ "#3453d5", "#5aa7f1", "#5aa7f1", "#5aa7f1", "#f1c244"];
 
       const presets = 
       [{R0: 3.0, D_incbation: 5.5, D_infectious: 4.5, CFR: 0.5/100, Time_to_death: 19},
@@ -26393,7 +26350,6 @@
       }
 
       var active = 0;
-      let mobile = false;
 
       var Integrators = {
         Euler    : [[1]],
@@ -26504,11 +26460,6 @@
     		screenHeight = window.innerHeight; $$invalidate('screenHeight', screenHeight);
     	}
 
-    	function input_change_handler() {
-    		mobile = this.checked;
-    		$$invalidate('mobile', mobile);
-    	}
-
     	function seirpanel_checked_binding(value) {
     		checked = value;
     		$$invalidate('checked', checked);
@@ -26559,33 +26510,28 @@
     		$$invalidate('active', active);
     	}
 
-    	function seir_mobile_binding(value) {
-    		mobile = value;
-    		$$invalidate('mobile', mobile);
-    	}
-
-    	function seir_OMInterventionAmt_binding_1(value_1) {
-    		OMInterventionAmt = value_1;
+    	function seir_OMInterventionAmt_binding_1(value) {
+    		OMInterventionAmt = value;
     		$$invalidate('OMInterventionAmt', OMInterventionAmt);
     	}
 
-    	function seir_InterventionTime_binding_1(value_2) {
-    		InterventionTime = value_2;
+    	function seir_InterventionTime_binding_1(value_1) {
+    		InterventionTime = value_1;
     		$$invalidate('InterventionTime', InterventionTime);
     	}
 
-    	function seir_checked_binding_1(value_3) {
-    		checked = value_3;
+    	function seir_checked_binding_1(value_2) {
+    		checked = value_2;
     		$$invalidate('checked', checked);
     	}
 
-    	function seir_active_binding_1(value_4) {
-    		active = value_4;
+    	function seir_active_binding_1(value_3) {
+    		active = value_3;
     		$$invalidate('active', active);
     	}
 
-    	function seirpanel_checked_binding_1(value_5) {
-    		checked = value_5;
+    	function seirpanel_checked_binding_1(value_4) {
+    		checked = value_4;
     		$$invalidate('checked', checked);
     	}
 
@@ -26596,7 +26542,7 @@
     	$$self.$inject_state = $$props => {
     		if ('colors' in $$props) $$invalidate('colors', colors = $$props.colors);
     		if ('active' in $$props) $$invalidate('active', active = $$props.active);
-    		if ('mobile' in $$props) $$invalidate('mobile', mobile = $$props.mobile);
+    		if ('mobile' in $$props) mobile = $$props.mobile;
     		if ('Integrators' in $$props) Integrators = $$props.Integrators;
     		if ('integrate' in $$props) integrate = $$props.integrate;
     		if ('InterventionTime' in $$props) $$invalidate('InterventionTime', InterventionTime = $$props.InterventionTime);
@@ -26664,7 +26610,6 @@
     		colors,
     		presetParameters,
     		active,
-    		mobile,
     		InterventionTime,
     		R0,
     		D_incbation,
@@ -26680,7 +26625,6 @@
     		indexToTime,
     		get_d,
     		onwindowresize,
-    		input_change_handler,
     		seirpanel_checked_binding,
     		control_R0_binding,
     		control_D_incbation_binding,
@@ -26691,7 +26635,6 @@
     		seir_InterventionTime_binding,
     		seir_checked_binding,
     		seir_active_binding,
-    		seir_mobile_binding,
     		seir_OMInterventionAmt_binding_1,
     		seir_InterventionTime_binding_1,
     		seir_checked_binding_1,
